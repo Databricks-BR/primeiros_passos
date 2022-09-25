@@ -8,8 +8,26 @@
 
 # COMMAND ----------
 
+# MAGIC %md-sandbox
+# MAGIC 
+# MAGIC <div style="text-align: left; valign: top; line-height: 0; padding-top: 9px;">
+# MAGIC   <img src="https://raw.githubusercontent.com/Databricks-BR/Databricks-BR/main/images/logo_delta_lake.png" style="width: 250px;">
+# MAGIC </div>
+# MAGIC 
+# MAGIC   
+# MAGIC O **Delta Lake** é uma camada de armazenamento de código aberto que adiciona confiabilidade, desempenho, governança e qualidade aos Data Lakes existentes — para operações de streaming e em lote (_BATCH_), baseado em um padrão aberto (_open format_): "**PARQUET**".
+# MAGIC O Delta habilita o paradigma **LAKEHOUSE** que combina os pontos fortes de Data lakes + Data Warehouses.
+# MAGIC Ao substituir os silos de dados por um único local para dados: estruturados, semiestruturados e não estruturados; o Delta Lake é a base de um LAKEHOUSE econômico e altamente escalável.
+# MAGIC 
+# MAGIC ##### Referência:
+# MAGIC * https://learn.microsoft.com/pt-br/azure/databricks/delta
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC ### Criação do Database (_Schema_)
+# MAGIC Sintaxe na linguagem SQL:
+# MAGIC 
 # MAGIC ```SQL
 # MAGIC CREATE DATABASE IF NOT EXISTS ${da.db_name}_default_location;ˋ
 # MAGIC 
@@ -27,6 +45,9 @@
 
 # MAGIC %md
 # MAGIC ### Criação das primeiras tabelas (DELTA TABLE)
+# MAGIC 
+# MAGIC Sintaxe na linguagem SQL:
+# MAGIC 
 # MAGIC ```SQL
 # MAGIC CREATE TABLE IF NOT EXISTS nome_tabela  (campo1 INT, campo2 STRING, campo3 DOUBLE, ...);
 # MAGIC ```
