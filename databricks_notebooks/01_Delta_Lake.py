@@ -29,9 +29,9 @@
 # MAGIC Sintaxe na linguagem SQL:
 # MAGIC 
 # MAGIC ```SQL
-# MAGIC CREATE DATABASE IF NOT EXISTS ${da.db_name}_default_location;ˋ
+# MAGIC CREATE DATABASE IF NOT EXISTS <nome_do_database>;ˋ
 # MAGIC 
-# MAGIC CREATE DATABASE IF NOT EXISTS ${da.db_name}_custom_location LOCATION '${da.paths.working_dir}/_custom_location.db';ˋ
+# MAGIC CREATE DATABASE IF NOT EXISTS <nome_do_database> LOCATION '${da.paths.working_dir}/_custom_location.db';ˋ
 # MAGIC ```
 
 # COMMAND ----------
